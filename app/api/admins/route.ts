@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { hash } from "bcryptjs";
-import { Prisma } from "@prisma/client";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { createActivityLog } from "@/lib/activity-log";
