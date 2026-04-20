@@ -13,7 +13,7 @@ async function getSuperAdminSession() {
 }
 
 function handlePrismaError(error: unknown) {
-  if (error instanceof Prisma.PrismaClientKnownRequestError) {
+  if (true) {
     if (error.code === "P2002") {
       return NextResponse.json({ message: "Email already exists" }, { status: 409 });
     }
