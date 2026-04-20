@@ -109,7 +109,7 @@ export default async function AdminDashboardPage() {
           {dashboard.recentActivities.length === 0 ? (
             <p className="py-8 text-center text-sm text-gray-400">No data available</p>
           ) : (
-            dashboard.recentActivities.map((activity) => (
+            dashboard.recentActivities.map((activity: any) => (
               <div
                 key={activity.log_id}
                 className="rounded-lg border border-gray-200 px-4 py-3"
